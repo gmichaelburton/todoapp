@@ -36,6 +36,12 @@ class TodosController < ApplicationController
   
   end
   
+  def index
+    @todos = Todo.all
+    
+  end
+  
+  
   private #only available to this controller
   
   def todo_params
